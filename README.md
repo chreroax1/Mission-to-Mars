@@ -1,5 +1,5 @@
 # Mission-To-Mars
-![Mars](mission_to_mars.jpg)
+![Mars](https://www.jpl.nasa.gov//spaceimages/images/largesize/PIA23170_hires.jpg)
 
 ## Background
 A project designed to show the latest data about Mars on a web page through the use of web scraping, MongoDB, and Flask.
@@ -19,7 +19,7 @@ A project designed to show the latest data about Mars on a web page through the 
 ## Process
 ### Overall Structure
 
-There are four distinct files for this project: the Jupyter Notebook file (mission_to_mars.ipynb), the converted Python scraper script (scrape_mars.py), the Flask app used to access this converted Python scraper script and to store the scraped data into a MongoDB database (app.py), and the HTML file to display and arrange the data (index.html).
+There are four distinct files for this project: the Jupyter Notebook file (Mission_to_Mars_Challenge.ipynb), the converted Python scraper script (scrape.py), the Flask app used to access this converted Python scraper script and to store the scraped data into a MongoDB database (app.py), and the HTML file to display and arrange the data (index.html).
 
 ### Jupyter Notebook file - mission_to_mars.ipynb
 
@@ -30,7 +30,7 @@ This file scrapes various types of Mars data through a combination of various to
 * Mars facts (https://space-facts.com/mars/) via Pandas and BeautifulSoup, and 
 * Mars hemisphere images (https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars) via Splinter and BeautifulSoup.
 
-### Converted Python scraper script - scrape_mars.py
+### Converted Python scraper script - scrape.py
 
 This file has been converted from the above Jupyter Notebook file into a Python script to scrape the above data. A few adjustments were made: 
 * Splinter's browser has been made headless for deployment,
@@ -41,7 +41,7 @@ This file has been converted from the above Jupyter Notebook file into a Python 
 
 This file connects to a MongoDB database and stores the scraped data into it. There are two routes:
 * The root route ("/"), which renders the template for the final output (including a button that activates the scraping), and
-* The route ("/scrape"), which executes the scraping functions found in scrape_mars.py.
+* The route ("/scrape"), which executes the scraping functions found in scrape.py.
 
 ### HTML file - index.html
 
