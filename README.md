@@ -4,7 +4,6 @@
 ## Background
 A project designed to show the latest data about Mars on a web page through the use of web scraping, MongoDB, and Flask.
 
-## Getting Started
 ### Technologies Used
 
 * Jupyter Notebook
@@ -16,12 +15,11 @@ A project designed to show the latest data about Mars on a web page through the 
 * pymongo
 * Flask
 
-## Process
 ### Overall Structure
 
 There are four distinct files for this project: the Jupyter Notebook file (Mission_to_Mars_Challenge.ipynb), the converted Python scraper script (scrape.py), the Flask app used to access this converted Python scraper script and to store the scraped data into a MongoDB database (app.py), and the HTML file to display and arrange the data (index.html).
 
-### Jupyter Notebook file - mission_to_mars.ipynb
+### Jupyter Notebook file - Mission_to_Mars_Challenge.ipynb
 
 This file scrapes various types of Mars data through a combination of various tools, as follows:
 * Mars news data (https://mars.nasa.gov/news/) via Splinter and BeautifulSoup,
